@@ -1,0 +1,149 @@
+/* src/app/blog/[slug]/page.module.css */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .article {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 2rem;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  .heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .header {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+  }
+  
+  .category {
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: var(--color-text-primary);
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+  
+  .content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-text-primary);
+  }
+  
+  .content h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    color: var(--color-primary);
+  }
+  
+  .content p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .interactions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+  
+  .stats {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .likeButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .likeButton span {
+    font-size: 1.4rem;
+  }
+  
+  .liked {
+    color: #ff4757;
+  }
+  
+  .views {
+    color: var(--color-text-muted);
+  }
+  
+  .tags {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .tag {
+    background: var(--color-background);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: var(--color-primary);
+    color: var(--color-surface);
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      height: 300px;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .meta {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  
+    .content {
+      font-size: 1rem;
+    }
+  }

@@ -1,0 +1,224 @@
+/* src/app/profile/settings/page.module.css */
+.main {
+    min-height: calc(100vh - 200px);
+    background: var(--color-background);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+  }
+  
+  .sidebar {
+    background: var(--color-surface);
+    padding: 1.5rem;
+    border-radius: 12px;
+    height: fit-content;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+  }
+  
+  .settingsNav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .navButton {
+    padding: 0.8rem 1rem;
+    text-align: left;
+    background: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--color-text-secondary);
+  }
+  
+  .navButton:hover {
+    background: var(--color-background);
+  }
+  
+  .navButton.active {
+    background: var(--color-primary);
+    color: var(--color-surface);
+  }
+  
+  .content {
+    background: var(--color-surface);
+    padding: 2rem;
+    border-radius: 12px;
+  }
+  
+  .content h2 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .formGroup label {
+    font-weight: 500;
+    color: var(--color-text-secondary);
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .formGroup input:focus,
+  .formGroup textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+  }
+  
+  .avatarUpload {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .uploadButton {
+    padding: 0.8rem 1.5rem;
+    background: var(--color-background);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .uploadButton:hover {
+    background: var(--color-primary);
+    color: var(--color-surface);
+  }
+  
+  .submitButton {
+    padding: 1rem;
+    background: var(--color-primary);
+    color: var(--color-surface);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    opacity: 0.9;
+  }
+  
+  .settingItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  
+  .settingItem h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .settingItem p {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-border);
+    transition: .3s;
+    border-radius: 24px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .3s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--color-primary);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .select {
+    padding: 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-surface);
+    color: var(--color-text-primary);
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  
+    .settingsNav {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .navButton {
+      flex: 1 1 calc(50% - 0.5rem);
+    }
+  }

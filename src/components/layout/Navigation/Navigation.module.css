@@ -1,0 +1,76 @@
+/* src/components/layout/Navigation/Navigation.module.css */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.navLink {
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  position: relative;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+
+.navLink:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.navLink:hover:after {
+  width: 100%;
+}
+
+.profileLink {
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  transition: color 0.3s ease;
+}
+
+.profileIcon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface);
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+  transition: all 0.3s ease;
+}
+
+.profileIcon:hover {
+  background: var(--color-accent);
+  color: var(--color-surface);
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    gap: 1.5rem;
+  }
+
+  .navLinks {
+    gap: 1.5rem;
+  }
+
+  .navLink {
+    font-size: 1rem;
+  }
+}

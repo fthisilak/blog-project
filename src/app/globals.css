@@ -1,0 +1,53 @@
+/* src/app/globals.css */
+:root {
+  /* Ana Renkler */
+  --color-primary: #5C4033;     /* Koyu kahve */
+  --color-secondary: #8B7355;   /* Orta kahve */
+  --color-accent: #DEB887;      /* Açık kahve */
+  
+  /* Arka plan renkleri */
+  --color-background: #F5E6D3;   /* Saman kağıdı */
+  --color-surface: #FFF8EA;      /* Çok açık saman */
+  --color-card: #FFFFFF;         /* Beyaz */
+  
+  /* Metin renkleri */
+  --color-text-primary: #2C1810;  /* Koyu kahve */
+  --color-text-secondary: #5C4033; /* Orta kahve */
+  --color-text-muted: #8B7355;    /* Açık kahve */
+  
+  /* Kenarlık renkleri */
+  --color-border: rgba(92, 64, 51, 0.1);  /* Transparan kahve */
+  
+  /* Gölge efektleri */
+  --shadow-sm: 0 2px 4px rgba(92, 64, 51, 0.05);
+  --shadow-md: 0 4px 6px rgba(92, 64, 51, 0.1);
+  --shadow-lg: 0 10px 15px rgba(92, 64, 51, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-accent);
+}

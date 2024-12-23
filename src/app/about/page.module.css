@@ -1,0 +1,91 @@
+/* src/app/about/page.module.css */
+.main {
+    min-height: calc(100vh - 200px);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: var(--color-surface);
+    border-radius: 16px;
+    margin-bottom: 4rem;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .content {
+    display: grid;
+    gap: 4rem;
+  }
+  
+  .mission, .values, .team {
+    background: var(--color-surface);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .mission h2, .values h2, .team h2 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+  }
+  
+  .mission p, .team p {
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    font-size: 1.1rem;
+  }
+  
+  .values ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .values li {
+    padding: 1rem;
+    background: var(--color-background);
+    border-radius: 8px;
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      padding: 2rem 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .content {
+      gap: 2rem;
+    }
+  
+    .values ul {
+      grid-template-columns: 1fr;
+    }
+  }

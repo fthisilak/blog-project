@@ -1,0 +1,156 @@
+/* src/app/contact/page.module.css */
+.main {
+    min-height: calc(100vh - 200px);
+    background: var(--color-background);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .contactHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .contactHeader h1 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+  
+  .contactHeader p {
+    color: var(--color-text-secondary);
+    font-size: 1.1rem;
+  }
+  
+  .contactContent {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+  }
+  
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .infoCard {
+    background: var(--color-surface);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .infoCard h3 {
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .infoItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-secondary);
+  }
+  
+  .socialLinks {
+    margin-top: 2rem;
+  }
+  
+  .socialButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .socialButton {
+    padding: 0.8rem 1rem;
+    background: var(--color-background);
+    border-radius: 8px;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .socialButton:hover {
+    background: var(--color-primary);
+    color: var(--color-surface);
+    transform: translateY(-2px);
+  }
+  
+  .contactForm {
+    background: var(--color-surface);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .formGroup {
+    margin-bottom: 1.5rem;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .formGroup input:focus,
+  .formGroup textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-primary);
+    color: var(--color-surface);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .contactContent {
+      grid-template-columns: 1fr;
+    }
+  
+    .contactHeader h1 {
+      font-size: 2rem;
+    }
+  
+    .infoCard {
+      text-align: center;
+    }
+  
+    .infoItem {
+      justify-content: center;
+    }
+  }

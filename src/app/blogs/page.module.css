@@ -1,0 +1,97 @@
+/* src/app/blogs/page.module.css */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .pageHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .pageHeader h1 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+  
+  .pageHeader p {
+    color: var(--color-text-secondary);
+    font-size: 1.1rem;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .categories {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .categoryButton {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 25px;
+    background: var(--color-surface);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .categoryButton:hover {
+    background: var(--color-primary);
+    color: var(--color-surface);
+    border-color: var(--color-primary);
+  }
+  
+  .categoryButton.active {
+    background: var(--color-primary);
+    color: var(--color-surface);
+    border-color: var(--color-primary);
+  }
+  
+  .sortSelect {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-surface);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    min-width: 150px;
+  }
+  
+  .sortSelect:focus {
+    outline: none;
+    border-color: var(--color-primary);
+  }
+  
+  @media (max-width: 768px) {
+    .filters {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .categories {
+      justify-content: center;
+    }
+  
+    .sortOptions {
+      width: 100%;
+    }
+  
+    .sortSelect {
+      width: 100%;
+    }
+  
+    .pageHeader h1 {
+      font-size: 2rem;
+    }
+  }

@@ -1,0 +1,100 @@
+.searchWrapper {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+  }
+  
+  .searchContainer {
+    flex: 1;
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--color-border);
+    border-radius: 30px;
+    font-size: 1rem;
+    background: var(--color-surface);
+    transition: all 0.3s ease;
+  }
+  
+  .searchInput:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .searchInput::placeholder {
+    color: transparent;
+  }
+  
+  .filterContainer {
+    position: relative;
+  }
+  
+  .filterButton {
+    background: var(--color-surface);
+    border: 2px solid var(--color-border);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--color-text-secondary);
+  }
+  
+  .filterButton:hover {
+    background: var(--color-accent);
+    color: var(--color-surface);
+    border-color: var(--color-accent);
+  }
+  
+  .filterDropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+    background: var(--color-surface);
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    padding: 1rem;
+    min-width: 200px;
+    z-index: 1000;
+  }
+  
+  .filterDropdown h3 {
+    color: var(--color-primary);
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+  }
+  
+  .filterDropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .categoryLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    transition: color 0.2s ease;
+  }
+  
+  .categoryLabel:hover {
+    color: var(--color-accent);
+  }
+  
+  .categoryLabel input[type="checkbox"] {
+    accent-color: var(--color-accent);
+  }

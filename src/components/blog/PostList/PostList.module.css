@@ -1,0 +1,23 @@
+
+/* src/components/blog/PostList/PostList.module.css */
+.postList {
+    width: 100%;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
